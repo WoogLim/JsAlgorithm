@@ -12,7 +12,7 @@
 // [4,3,2,1]	[4,3,2]
 // [10]	[-1]
 
-console.log(solution([4,3,2,1]))
+// console.log(solution([4,3,2,1]))
 
 // function solution(arr) {
 //   if(arr.length <= 1){
@@ -25,7 +25,6 @@ console.log(solution([4,3,2,1]))
 // }
 
 // 정렬을 안쓰네?? 하는줄 알았네 안쓰는게 좋을거같음.
-
 function solution(arr) {
   arr.splice(arr.indexOf(Math.min(...arr)), 1);
 

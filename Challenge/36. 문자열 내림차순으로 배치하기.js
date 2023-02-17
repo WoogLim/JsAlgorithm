@@ -9,3 +9,18 @@
 // s	return
 // "Zbcdefg"	"gfedcbZ"
 // https://programmers.co.kr/learn/courses/30/lessons/12917
+
+console.log(solution("ZGbcdefFg"))
+
+function solution(s){
+  let ascii = [...s].sort((a, b) => a < b ? 1 : a > b ? -1 : 0).join("")
+  return ascii;
+}
+
+// function solution(s) {
+//   return s
+//     .split("")
+//     .sort()
+//     .reverse()
+//     .join("");
+// }
